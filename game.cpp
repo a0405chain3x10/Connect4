@@ -150,7 +150,8 @@ int main() {
             game->move(i,m);
         }
         else{
-            cout<<"Out of bound"<<endl;
+            cout<<"Out of bound! Retry"<<endl;
+            m++;
         }
         if(game->win(i-1,game->curr_cord)){
             if(m%2==0){
